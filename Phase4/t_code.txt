@@ -1,0 +1,169 @@
+---------NumConsts---------
+numConsts[0] = 9.000000
+numConsts[1] = 5.000000
+numConsts[2] = 1.000000
+numConsts[3] = 0.000000
+numConsts[4] = 1.000000
+numConsts[5] = 2.000000
+numConsts[6] = 1.000000
+numConsts[7] = 0.000000
+numConsts[8] = 1.000000
+numConsts[9] = 0.000000
+numConsts[10] = 10.000000
+numConsts[11] = 1.000000
+---------StringConsts---------
+stringConsts[0] = 
+
+stringConsts[1] = start
+stringConsts[2] = 
+
+stringConsts[3] = 
+
+stringConsts[4] = x+y = 
+stringConsts[5] = 
+
+stringConsts[6] = x-y = 
+stringConsts[7] = 
+
+stringConsts[8] = x*y = 
+stringConsts[9] = 
+
+stringConsts[10] = x/y = 
+stringConsts[11] = 
+
+stringConsts[12] = x%y = 
+stringConsts[13] = 
+
+stringConsts[14] = (a <= b):
+stringConsts[15] = (a > b):
+stringConsts[16] = i=
+stringConsts[17] = 
+
+stringConsts[18] = i fora
+
+stringConsts[19] = OFI 
+stringConsts[20] = ola popa
+
+---------LibFuncs---------
+namedLibfuncs[0] = print
+---------UserFuncs---------
+
+0: ASSIGN  01(global),0  04(num),0  [line 1]
+1: ASSIGN  01(global),1  01(global),0  [line 1]
+2: ASSIGN  01(global),1  04(num),1  [line 2]
+3: ASSIGN  01(global),2  01(global),1  [line 2]
+4: ASSIGN  01(global),2  04(num),2  [line 3]
+5: ASSIGN  01(global),3  01(global),2  [line 3]
+6: ASSIGN  01(global),3  04(num),3  [line 4]
+7: ASSIGN  01(global),4  01(global),3  [line 4]
+8: ASSIGN  01(global),4  05(string),0  [line 6]
+9: ASSIGN  01(global),5  01(global),4  [line 6]
+10: ASSIGN  01(global),5  05(string),1  [line 7]
+11: ASSIGN  01(global),6  01(global),5  [line 7]
+12: ADD  01(global),9  01(global),0  01(global),1  [line 9]
+13: ASSIGN  01(global),6  01(global),9  [line 9]
+14: ASSIGN  01(global),9  01(global),6  [line 9]
+15: SUB  01(global),12  01(global),0  01(global),1  [line 10]
+16: ASSIGN  01(global),9  01(global),12  [line 10]
+17: ASSIGN  01(global),12  01(global),9  [line 10]
+18: MUL  01(global),15  01(global),0  01(global),1  [line 11]
+19: ASSIGN  01(global),12  01(global),15  [line 11]
+20: ASSIGN  01(global),15  01(global),12  [line 11]
+21: DIV  01(global),18  01(global),0  01(global),1  [line 12]
+22: ASSIGN  01(global),15  01(global),18  [line 12]
+23: ASSIGN  01(global),18  01(global),15  [line 12]
+24: MOD  01(global),21  01(global),0  01(global),1  [line 13]
+25: ASSIGN  01(global),18  01(global),21  [line 13]
+26: ASSIGN  01(global),21  01(global),18  [line 13]
+27: PUSHARG  01(global),5  [line 15]
+28: CALLFUNC  09(libfunc),0  [line 15]
+29: ASSIGN  01(global),23  10(retval)  [line 15]
+30: PUSHARG  05(string),2  [line 17]
+31: CALLFUNC  09(libfunc),0  [line 17]
+32: ASSIGN  01(global),24  10(retval)  [line 17]
+33: PUSHARG  05(string),3  [line 18]
+34: PUSHARG  01(global),6  [line 18]
+35: PUSHARG  05(string),4  [line 18]
+36: CALLFUNC  09(libfunc),0  [line 18]
+37: ASSIGN  01(global),26  10(retval)  [line 18]
+38: PUSHARG  05(string),5  [line 19]
+39: PUSHARG  01(global),9  [line 19]
+40: PUSHARG  05(string),6  [line 19]
+41: CALLFUNC  09(libfunc),0  [line 19]
+42: ASSIGN  01(global),28  10(retval)  [line 19]
+43: PUSHARG  05(string),7  [line 20]
+44: PUSHARG  01(global),12  [line 20]
+45: PUSHARG  05(string),8  [line 20]
+46: CALLFUNC  09(libfunc),0  [line 20]
+47: ASSIGN  01(global),30  10(retval)  [line 20]
+48: PUSHARG  05(string),9  [line 21]
+49: PUSHARG  01(global),15  [line 21]
+50: PUSHARG  05(string),10  [line 21]
+51: CALLFUNC  09(libfunc),0  [line 21]
+52: ASSIGN  01(global),32  10(retval)  [line 21]
+53: PUSHARG  05(string),11  [line 22]
+54: PUSHARG  01(global),18  [line 22]
+55: PUSHARG  05(string),12  [line 22]
+56: CALLFUNC  09(libfunc),0  [line 22]
+57: ASSIGN  01(global),34  10(retval)  [line 22]
+58: PUSHARG  05(string),13  [line 23]
+59: CALLFUNC  09(libfunc),0  [line 23]
+60: ASSIGN  01(global),35  10(retval)  [line 23]
+61: JLE  00(label),64  01(global),2  01(global),3  [line 25]
+62: ASSIGN  01(global),37  06(boolean),0:false  [line 25]
+63: JUMP  00(label),65  [line 25]
+64: ASSIGN  01(global),37  06(boolean),1:true  [line 25]
+65: JEQ  00(label),67  01(global),37  06(boolean),1:true  [line 25]
+66: JUMP  00(label),73  [line 25]
+67: PUSHARG  01(global),4  [line 26]
+68: PUSHARG  04(num),4  [line 26]
+69: PUSHARG  05(string),14  [line 26]
+70: CALLFUNC  09(libfunc),0  [line 26]
+71: ASSIGN  01(global),39  10(retval)  [line 26]
+72: JUMP  00(label),78  [line 27]
+73: PUSHARG  01(global),4  [line 28]
+74: PUSHARG  04(num),5  [line 28]
+75: PUSHARG  05(string),15  [line 28]
+76: CALLFUNC  09(libfunc),0  [line 28]
+77: ASSIGN  01(global),41  10(retval)  [line 28]
+78: ASSIGN  01(global),41  05(string),16  [line 31]
+79: ASSIGN  01(global),42  01(global),41  [line 31]
+80: JEQ  00(label),82  04(num),6  06(boolean),1:true  [line 32]
+81: JUMP  00(label),99  [line 32]
+82: ASSIGN  01(global),42  04(num),7  [line 33]
+83: ASSIGN  01(global),43  01(global),42  [line 33]
+84: JLT  00(label),87  01(global),42  01(global),0  [line 33]
+85: ASSIGN  01(global),45  06(boolean),0:false  [line 33]
+86: JUMP  00(label),88  [line 33]
+87: ASSIGN  01(global),45  06(boolean),1:true  [line 33]
+88: JEQ  00(label),93  01(global),45  06(boolean),1:true  [line 33]
+89: JUMP  00(label),99  [line 33]
+90: ASSIGN  01(global),46  01(global),42  [line 33]
+91: ADD  01(global),42  01(global),42  04(num),8  [line 33]
+92: JUMP  00(label),84  [line 33]
+93: PUSHARG  05(string),17  [line 34]
+94: PUSHARG  01(global),42  [line 34]
+95: PUSHARG  01(global),41  [line 34]
+96: CALLFUNC  09(libfunc),0  [line 34]
+97: ASSIGN  01(global),49  10(retval)  [line 34]
+98: JUMP  00(label),90  [line 35]
+99: ASSIGN  01(global),49  04(num),9  [line 38]
+100: ASSIGN  01(global),50  01(global),49  [line 38]
+101: JLT  00(label),104  01(global),49  04(num),10  [line 39]
+102: ASSIGN  01(global),51  06(boolean),0:false  [line 39]
+103: JUMP  00(label),105  [line 39]
+104: ASSIGN  01(global),51  06(boolean),1:true  [line 39]
+105: JEQ  00(label),107  01(global),51  06(boolean),1:true  [line 39]
+106: JUMP  00(label),115  [line 39]
+107: ASSIGN  01(global),52  01(global),49  [line 40]
+108: ADD  01(global),49  01(global),49  04(num),11  [line 40]
+109: PUSHARG  05(string),18  [line 43]
+110: PUSHARG  01(global),49  [line 43]
+111: PUSHARG  05(string),19  [line 43]
+112: CALLFUNC  09(libfunc),0  [line 43]
+113: ASSIGN  01(global),54  10(retval)  [line 43]
+114: JUMP  00(label),101  [line 44]
+115: PUSHARG  05(string),20  [line 46]
+116: CALLFUNC  09(libfunc),0  [line 46]
+117: ASSIGN  01(global),55  10(retval)  [line 46]
+

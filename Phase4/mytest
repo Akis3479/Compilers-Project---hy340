@@ -1,0 +1,46 @@
+x=9;
+y=5;
+a = 1;
+b = 0;
+
+nl = "\n";
+start = "start";
+
+z1 = x+y;
+z2 = x-y;
+z3 = x*y;
+z4 = x/y;
+z5 = x%y;
+
+print(start);
+
+print("\n");
+print("x+y = ", z1, "\n");
+print("x-y = ", z2, "\n");
+print("x*y = ", z3, "\n");
+print("x/y = ", z4, "\n");
+print("x%y = ", z5, "\n");
+print("\n");
+
+if(a <= b){
+    print("(a <= b):", 1, nl);
+}else{
+    print("(a > b):", 2, nl);
+}
+
+str = "i=";
+if(1){
+    for(i=0;i<x;i++){
+        print(str, i, "\n");
+    }
+}
+
+j=0;
+while(j<10){
+    j++;
+    // break;  // doulevei
+    // continue;  // doulevei
+    print("OFI ",j,"i fora\n");
+}
+
+print("ola popa\n");

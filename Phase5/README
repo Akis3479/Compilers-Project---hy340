@@ -1,0 +1,13 @@
+O fakelos PhaseD prepei na einai sto amesws proigoumeno directory apo ton PhaseE
+
+Sto PhaseE:
+
+- make
+	kanei compile tin 4i fasi kai trexei to mytest gia na ftiaksei to binary file
+	kanei compile tin 5i fasi kai vgazei to ektelesimo avm
+	
+- avm binary.bin
+	diavazei to binary file kai trexei ton kwdika
+
+- avm binary.bin -p 
+	diavazei to binary file, to ektypwnei kai trexei ton kwdika
